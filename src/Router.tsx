@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        // "" : Home 컴포넌트 이동
+        // "" : Home 컴포넌트 이동함
         path: "",
         element: <Home />,
       },
