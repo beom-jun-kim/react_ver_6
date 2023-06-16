@@ -5,6 +5,7 @@ import App from "./App";
 import User from "./router/users/User";
 import { createBrowserRouter } from "react-router-dom";
 import NotFound from "./router/NotFound";
+import Followers from "./router/users/Followers";
 
 // createBrowserRouter: Router를 array 형식으로 표현할 수 있게 해준다
 const router = createBrowserRouter([
@@ -30,6 +31,12 @@ const router = createBrowserRouter([
       {
         path: "users/:userId",
         element: <User />,
+        children: [
+          {
+            path: "followers",
+            element: <Followers />,
+          },
+        ],
       },
     ],
 
