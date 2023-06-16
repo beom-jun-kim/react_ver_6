@@ -2,6 +2,7 @@ import Home from "./router/Home";
 import About from "./router/About";
 import Header from "./components/Header";
 import App from "./App";
+import User from "./router/users/User";
 import { createBrowserRouter } from "react-router-dom";
 import NotFound from "./router/NotFound";
 
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "header",
         element: <Header />,
+      },
+      {
+        path: "users/:userId",
+        element: <User />,
       },
     ],
 
