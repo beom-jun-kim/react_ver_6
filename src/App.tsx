@@ -6,8 +6,9 @@ function App() {
     <div>
       <Header />
 
-      {/* 컴포넌트 대체 */}
-      <Outlet />
+      {/* 하위 컴포넌트 대체 */}
+      {/* context: 하위의 모든 화면과 소통하게 된다 */}
+      <Outlet context={{ darkMode: true }} />
     </div>
   );
 }
